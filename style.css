@@ -1,0 +1,153 @@
+<!-- style.css -->
+
+/*
+Це фрагмент коду CSS, який використовує універсальний селектор (*) для застосування
+стилів до всіх елементів HTML на веб-сторінці.
+
+- box-sizing: border-box; ширина та висота елемента включатиме вміст, відступи та межі,
+  але не будь-які поля. Це допомагає забезпечити правильний розмір і розташування елементів
+  на сторінці.
+- margin: 0; і padding: 0; встановлюють властивості поля та відступу на 0 для всіх елементів.
+  Це допомагає гарантувати відсутність небажаних інтервалів або відступів навколо країв елементів
+  на сторінці.
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+- background-color: #f2f2f2; встановлює світло-сірий колір фону елемента або сторінки.
+- font-family: Arial, sans-serif; встановлює сімейство шрифтів для основного тексту.
+- font-size: 16px; встановлює розмір шрифту.
+- line-height: 1.5; встановлює висоту рядка для покращення читабельності.
+*/
+
+body {
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/*
+- background-color: #333; встановлює темно-сірий колір фону заголовка.
+- color: #fff; встановлює білий колір тексту заголовка.
+- display: flex; дозволяє використовувати властивості макета flexbox.
+- justify-content: space-between; вирівнює дочірні елементи із рівномірним простором між ними.
+- align-items: center; центрує дочірні елементи по вертикалі.
+- padding: 10px; створює простір між вмістом і краями заголовка.
+*/
+
+header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+header h1 {
+    /* Усунення небажаних інтервалів і акцентування заголовка */
+    margin: 0;
+    font-size: 28px;
+}
+
+/*
+- list-style: none; видаляє стандартні маркери у списках.
+- display: flex; використовує flexbox для розташування елементів списку.
+*/
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+/*
+- color: #000; встановлює чорний колір тексту елементів списку.
+- margin-right: 20px; створює простір між елементами списку.
+*/
+
+nav li {
+    color: #000;
+    margin-right: 20px;
+}
+
+nav a {
+    color: #000;
+    text-decoration: none;
+}
+
+/* Style the main section */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+section {
+    flex-basis: calc(50% - 20px);
+    margin-bottom: 40px;
+}
+
+section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+li img {
+    max-width: 100%;
+    margin-bottom: 10px;
+}
+
+li h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+li p {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #666;
+}
+
+/* Style the footer section */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+footer p {
+    margin: 0;
+}
